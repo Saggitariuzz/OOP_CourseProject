@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OOP\\oop\\CourseProject\\Theatre\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|D:\\OOP\\oop\\CourseProject\\Theatre\\theatre\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\performanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\performanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|D:\\OOP\\oop\\CourseProject\\Theatre\\theatre\\performanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\performanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\models\\performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\models\\performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\database\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\database\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|D:\\OOP\\oop\\CourseProject\\Theatre\\theatre\\welcomeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\welcomeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\welcomeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\welcomeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\welcomeform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\welcomeform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\welcomeform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\welcomeform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\mainform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\mainform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\performanceform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\performanceform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|d:\\oop\\oop\\courseproject\\theatre\\theatre\\theatre.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FD97E8-568E-4F73-918E-5BB9EF68D412}|Theatre\\Theatre.csproj|solutionrelative:theatre\\theatre.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\MainForm.cs",
+              "RelativeDocumentMoniker": "Theatre\\MainForm.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\MainForm.cs",
+              "RelativeToolTip": "Theatre\\MainForm.cs",
+              "ViewState": "AgIAAIEBAAAAAAAAAAAqwIYBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T09:18:16.801Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PerformanceForm.cs",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\PerformanceForm.cs",
+              "RelativeDocumentMoniker": "Theatre\\PerformanceForm.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\PerformanceForm.cs",
+              "RelativeToolTip": "Theatre\\PerformanceForm.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T10:58:46.777Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WelcomeForm.cs",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.cs",
+              "RelativeDocumentMoniker": "Theatre\\WelcomeForm.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.cs",
+              "RelativeToolTip": "Theatre\\WelcomeForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T11:14:06.043Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\MainForm.cs",
+              "RelativeDocumentMoniker": "Theatre\\MainForm.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\MainForm.cs [Design]",
+              "RelativeToolTip": "Theatre\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T08:59:09.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PerformanceForm.cs [Design]",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\PerformanceForm.cs",
+              "RelativeDocumentMoniker": "Theatre\\PerformanceForm.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\PerformanceForm.cs [Design]",
+              "RelativeToolTip": "Theatre\\PerformanceForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T10:47:37.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Performance.cs",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\Models\\Performance.cs",
+              "RelativeDocumentMoniker": "Theatre\\Models\\Performance.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\Models\\Performance.cs",
+              "RelativeToolTip": "Theatre\\Models\\Performance.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T10:03:00.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\DataBase\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "Theatre\\DataBase\\DatabaseContext.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\DataBase\\DatabaseContext.cs",
+              "RelativeToolTip": "Theatre\\DataBase\\DatabaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T10:19:10.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WelcomeForm.cs [Design]",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.cs",
+              "RelativeDocumentMoniker": "Theatre\\WelcomeForm.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.cs [Design]",
+              "RelativeToolTip": "Theatre\\WelcomeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T11:05:21.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WelcomeForm.Designer.cs",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.Designer.cs",
+              "RelativeDocumentMoniker": "Theatre\\WelcomeForm.Designer.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.Designer.cs",
+              "RelativeToolTip": "Theatre\\WelcomeForm.Designer.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T16:59:35.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "Theatre\\MainForm.Designer.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\MainForm.Designer.cs",
+              "RelativeToolTip": "Theatre\\MainForm.Designer.cs",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAAABUBAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T09:19:02.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WelcomeForm.resx",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.resx",
+              "RelativeDocumentMoniker": "Theatre\\WelcomeForm.resx",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.resx",
+              "RelativeToolTip": "Theatre\\WelcomeForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-04-08T16:59:34.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\Program.cs",
+              "RelativeDocumentMoniker": "Theatre\\Program.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\Program.cs",
+              "RelativeToolTip": "Theatre\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAawBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T08:59:21.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PerformanceForm.Designer.cs",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\PerformanceForm.Designer.cs",
+              "RelativeDocumentMoniker": "Theatre\\PerformanceForm.Designer.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\PerformanceForm.Designer.cs",
+              "RelativeToolTip": "Theatre\\PerformanceForm.Designer.cs",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAQwAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T11:11:47.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainForm.resx",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\MainForm.resx",
+              "RelativeDocumentMoniker": "Theatre\\MainForm.resx",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\MainForm.resx",
+              "RelativeToolTip": "Theatre\\MainForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-02-20T10:41:22.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Theatre.csproj",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\Theatre.csproj",
+              "RelativeDocumentMoniker": "Theatre\\Theatre.csproj",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\Theatre.csproj",
+              "RelativeToolTip": "Theatre\\Theatre.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-20T09:00:52.142Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
