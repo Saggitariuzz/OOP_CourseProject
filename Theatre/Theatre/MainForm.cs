@@ -11,7 +11,7 @@ namespace Theatre
 {
 
     /// <summary>
-    /// Делегат, для обработки событий изменения в коллекции записей.
+    /// Делегат для обработки событий изменения в коллекции записей.
     /// </summary>
     /// <param name="p">Объект, который был добавлен/удален.</param>
     public delegate void CollectionChanged(Performance p);
