@@ -4,13 +4,26 @@ using Theatre.Models;
 
 namespace Theatre
 {
+    /// <summary>
+    /// Класс формы для добавления/изменения записей.
+    /// </summary>
     public partial class PerformanceForm : Form
     {
-
+        /// <summary>
+        /// Объект, который будет добавлен/изменен.
+        /// </summary>
         public Performance Performance { get; set; }
 
+        /// <summary>
+        /// Коллекция уже добавленных объектов (для проверки на дублирование).
+        /// </summary>
         public BindingList<Performance> List { get; set; }
 
+        /// <summary>
+        /// Конструктор формы, который вызывается при изменении записей.
+        /// </summary>
+        /// <param name="_performance">Объект, который будет изменен.</param>
+        /// <param name="_list">Коллекция уже существующих объектов.</param>
         public PerformanceForm(Performance _performance, BindingList<Performance> _list)
         {
             InitializeComponent();
@@ -26,6 +39,10 @@ namespace Theatre
             nudTicketCost.Value = Performance.TicketCost;
         }
 
+        /// <summary>
+        /// Конструктор формы, который вызывается при добавлении записей.
+        /// </summary>
+        /// <param name="_list">Коллекция уже существующих объектов.</param>
         public PerformanceForm(BindingList<Performance> _list)
         {
             InitializeComponent();
@@ -39,6 +56,11 @@ namespace Theatre
         }
 
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки добавить/изменить запись.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if(tbDirectorName.Text == "" || tbNameOfPerformance.Text == "")

@@ -10,21 +10,47 @@ using Theatre.Models;
 namespace Theatre
 {
 
+    /// <summary>
+    /// Делегат, для обработки событий изменения в коллекции записей.
+    /// </summary>
+    /// <param name="p">Объект, который был добавлен/удален.</param>
     public delegate void CollectionChanged(Performance p);
     
+    /// <summary>
+    /// Класс основной формы приложения.
+    /// </summary>
     public partial class MainForm : Form
     {
 
+        /// <summary>
+        /// Коллекция, хранящая записи о представлениях.
+        /// </summary>
         private BindingList<Performance> performances;
 
+        /// <summary>
+        /// Строка для подключения к БД.
+        /// </summary>
         private string connection;
 
+        /// <summary>
+        /// Событие удаления записи из коллекции.
+        /// </summary>
         public event CollectionChanged ItemRemoved;
 
+        /// <summary>
+        /// Событие добавления записи в коллекцию.
+        /// </summary>
         public event CollectionChanged ItemAdded;
 
+        /// <summary>
+        /// Флаг направления сортировки (в прямом/обратном алфавитном порядке).
+        /// </summary>
         private bool reverseSort = false;
 
+        /// <summary>
+        /// Конструктор формы.
+        /// Настраивает таблицу для отображения записей, инициализириует коллекцию, события
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();
@@ -48,6 +74,11 @@ namespace Theatre
             ItemRemoved += (p => { });
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для создания новой БД.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void CreateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Text = "ИС «Театр»";
@@ -57,6 +88,11 @@ namespace Theatre
             labelCount.Text = "Отображено 0 из 0 записей";
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для загрузки созданной ранее БД.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
@@ -84,6 +120,11 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для сохранения записей в файл БД.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (connection == "")
@@ -102,11 +143,21 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для сохранения записей в новый файл БД.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveDatabaseAs();
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для добавления новой записи.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void AddRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (PerformanceForm performanceForm = new PerformanceForm(performances))
@@ -130,6 +181,11 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для изменения существующей записи.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void ChangeRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (dgvMainTable.SelectedRows.Count == 1)
@@ -155,6 +211,11 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для удаления существующей записи.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void RemoveRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (bindingSource.Current == null)
@@ -168,6 +229,11 @@ namespace Theatre
             labelCount.Text = $"Отображено {(bindingSource.DataSource as BindingList<Performance>).Count} из {performances.Count} записей";
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для удаления всех записей.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void ClearToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (performances.Count == 0)
@@ -180,6 +246,9 @@ namespace Theatre
             labelCount.Text = "Отображено 0 из 0 записей";
         }
 
+        /// <summary>
+        /// Метод, сохраняющий записи в новый файл БД.
+        /// </summary>
         private void SaveDatabaseAs()
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog
@@ -200,6 +269,11 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий изменение текста для фильтрации записей.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void tbFilterValue_TextChanged(object sender, EventArgs e)
         {
             if (tbFilterValue.Text == "")
@@ -236,6 +310,10 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, фильтрующий записи по заданному критерию.
+        /// </summary>
+        /// <param name="selector">Делегат, возвращающий строковое значение из объекта Performance</param>
         private void Filter(Func<Performance, string> selector)
         {
             ItemAdded -= (p => { });
@@ -260,6 +338,11 @@ namespace Theatre
             labelCount.Text = $"Отображено {tmp.Count} из {performances.Count} записей";
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для сортировки записей.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void btnSort_Click(object sender, EventArgs e)
         {
             if (performances.Count == 0)
@@ -292,6 +375,11 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий нажатие кнопки для сохранения таблицы с записями в PDF-файл.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void CreatePdfToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog
@@ -340,6 +428,11 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий изменение текста для поиска записей.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
             foreach (DataGridViewRow i in dgvMainTable.Rows)
@@ -376,6 +469,11 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, сортирующий записи по алфавиту/возрастанию (убыванию) (в зависимости от критерия).
+        /// </summary>
+        /// <typeparam name="T">Тип значения, по которому производится сортировка.</typeparam>
+        /// <param name="selector">Делегат, определяющий поле объекта, по которому производится сортировка.</param>
         private void SortList<T>(Func<Performance, T> selector)
         {
             ItemAdded -= (p => { });
@@ -390,6 +488,10 @@ namespace Theatre
             reverseSort = !reverseSort;
         }
 
+        /// <summary>
+        /// Метод, выполняющий поиск записей по критерию.
+        /// </summary>
+        /// <param name="selector">Делегат, возвращающий значение, по которому производится поиск.</param>
         private void Search(Func<Performance, string> selector)
         {
             foreach(DataGridViewRow i in dgvMainTable.Rows)
@@ -402,6 +504,11 @@ namespace Theatre
             }
         }
 
+        /// <summary>
+        /// Метод, обрабатывающий сброс выбора строки в таблице по клику на любое место формы, кроме самой таблицы.
+        /// </summary>
+        /// <param name="sender">Источник события</param>
+        /// <param name="e">Аргументы события нажатия</param>
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
             if (!dgvMainTable.Bounds.Contains(PointToClient(Cursor.Position)))
