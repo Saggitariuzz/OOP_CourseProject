@@ -11,45 +11,45 @@ namespace Theatre
 {
 
     /// <summary>
-    /// Делегат, для обработки событий изменения в коллекции записей.
+    /// Р”РµР»РµРіР°С‚, РґР»СЏ РѕР±СЂР°Р±РѕС‚РєРё СЃРѕР±С‹С‚РёР№ РёР·РјРµРЅРµРЅРёСЏ РІ РєРѕР»Р»РµРєС†РёРё Р·Р°РїРёСЃРµР№.
     /// </summary>
-    /// <param name="p">Объект, который был добавлен/удален.</param>
+    /// <param name="p">РћР±СЉРµРєС‚, РєРѕС‚РѕСЂС‹Р№ Р±С‹Р» РґРѕР±Р°РІР»РµРЅ/СѓРґР°Р»РµРЅ.</param>
     public delegate void CollectionChanged(Performance p);
     
     /// <summary>
-    /// Класс основной формы приложения.
+    /// РљР»Р°СЃСЃ РѕСЃРЅРѕРІРЅРѕР№ С„РѕСЂРјС‹ РїСЂРёР»РѕР¶РµРЅРёСЏ.
     /// </summary>
     public partial class MainForm : Form
     {
 
         /// <summary>
-        /// Коллекция, хранящая записи о представлениях.
+        /// РљРѕР»Р»РµРєС†РёСЏ, С…СЂР°РЅСЏС‰Р°СЏ Р·Р°РїРёСЃРё Рѕ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏС….
         /// </summary>
         private BindingList<Performance> performances;
 
         /// <summary>
-        /// Строка для подключения к БД.
+        /// РЎС‚СЂРѕРєР° РґР»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р‘Р”.
         /// </summary>
         private string connection;
 
         /// <summary>
-        /// Событие удаления записи из коллекции.
+        /// РЎРѕР±С‹С‚РёРµ СѓРґР°Р»РµРЅРёСЏ Р·Р°РїРёСЃРё РёР· РєРѕР»Р»РµРєС†РёРё.
         /// </summary>
         public event CollectionChanged ItemRemoved;
 
         /// <summary>
-        /// Событие добавления записи в коллекцию.
+        /// РЎРѕР±С‹С‚РёРµ РґРѕР±Р°РІР»РµРЅРёСЏ Р·Р°РїРёСЃРё РІ РєРѕР»Р»РµРєС†РёСЋ.
         /// </summary>
         public event CollectionChanged ItemAdded;
 
         /// <summary>
-        /// Флаг направления сортировки (в прямом/обратном алфавитном порядке).
+        /// Р¤Р»Р°Рі РЅР°РїСЂР°РІР»РµРЅРёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё (РІ РїСЂСЏРјРѕРј/РѕР±СЂР°С‚РЅРѕРј Р°Р»С„Р°РІРёС‚РЅРѕРј РїРѕСЂСЏРґРєРµ).
         /// </summary>
         private bool reverseSort = false;
 
         /// <summary>
-        /// Конструктор формы.
-        /// Настраивает таблицу для отображения записей, инициализириует коллекцию, события
+        /// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ С„РѕСЂРјС‹.
+        /// РќР°СЃС‚СЂР°РёРІР°РµС‚ С‚Р°Р±Р»РёС†Сѓ РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ Р·Р°РїРёСЃРµР№, РёРЅРёС†РёР°Р»РёР·РёСЂРёСѓРµС‚ РєРѕР»Р»РµРєС†РёСЋ, СЃРѕР±С‹С‚РёСЏ
         /// </summary>
         public MainForm()
         {
@@ -59,12 +59,12 @@ namespace Theatre
             connection = "";
             bindingSource.DataSource = performances;
             dgvMainTable.DataSource = bindingSource;
-            dgvMainTable.Columns["PerformanceName"].HeaderText = "Название спектакля";
-            dgvMainTable.Columns["DirectorName"].HeaderText = "Имя режиссера";
-            dgvMainTable.Columns["Genre"].HeaderText = "Жанр";
-            dgvMainTable.Columns["PremiereDate"].HeaderText = "Дата премьеры";
-            dgvMainTable.Columns["Duration"].HeaderText = "Длительность";
-            dgvMainTable.Columns["TicketCost"].HeaderText = "Стоимость билета";
+            dgvMainTable.Columns["PerformanceName"].HeaderText = "РќР°Р·РІР°РЅРёРµ СЃРїРµРєС‚Р°РєР»СЏ";
+            dgvMainTable.Columns["DirectorName"].HeaderText = "РРјСЏ СЂРµР¶РёСЃСЃРµСЂР°";
+            dgvMainTable.Columns["Genre"].HeaderText = "Р–Р°РЅСЂ";
+            dgvMainTable.Columns["PremiereDate"].HeaderText = "Р”Р°С‚Р° РїСЂРµРјСЊРµСЂС‹";
+            dgvMainTable.Columns["Duration"].HeaderText = "Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ";
+            dgvMainTable.Columns["TicketCost"].HeaderText = "РЎС‚РѕРёРјРѕСЃС‚СЊ Р±РёР»РµС‚Р°";
             dgvMainTable.Columns["Id"].Visible = false;
             dgvMainTable.Columns["PremiereDate"].DefaultCellStyle.Format = "dd.MM.yyyy";
             dgvMainTable.Columns["Duration"].DefaultCellStyle.Format = @"hh\:mm\:ss";
@@ -75,30 +75,30 @@ namespace Theatre
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для создания новой БД.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РЅРѕРІРѕР№ Р‘Р”.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void CreateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Text = "ИС «Театр»";
+            Text = "РРЎ В«РўРµР°С‚СЂВ»";
             connection = "";
             bindingSource.DataSource = performances;
             performances.Clear();
-            labelCount.Text = "Отображено 0 из 0 записей";
+            labelCount.Text = "РћС‚РѕР±СЂР°Р¶РµРЅРѕ 0 РёР· 0 Р·Р°РїРёСЃРµР№";
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для загрузки созданной ранее БД.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ Р·Р°РіСЂСѓР·РєРё СЃРѕР·РґР°РЅРЅРѕР№ СЂР°РЅРµРµ Р‘Р”.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
                 Filter = "SQLite Database Files (*.db)|*.db",
-                Title = "Выберите файл базы данных",
+                Title = "Р’С‹Р±РµСЂРёС‚Рµ С„Р°Р№Р» Р±Р°Р·С‹ РґР°РЅРЅС‹С…",
                 CheckFileExists = true,
                 CheckPathExists = true,
                 Multiselect = false
@@ -107,7 +107,7 @@ namespace Theatre
             {
                 bindingSource.DataSource = performances;
                 connection = $"Data Source={openFileDialog.FileName}";
-                Text = $"ИС «Театр» - {connection.Replace("Data Source=", "")}";
+                Text = $"РРЎ В«РўРµР°С‚СЂВ» - {connection.Replace("Data Source=", "")}";
                 using (DatabaseContext context = new DatabaseContext(connection))
                 {
                     performances.Clear();
@@ -116,15 +116,15 @@ namespace Theatre
                         performances.Add(p);
                     }
                 }
-                labelCount.Text = $"Отображено {performances.Count} из {performances.Count} записей";
+                labelCount.Text = $"РћС‚РѕР±СЂР°Р¶РµРЅРѕ {performances.Count} РёР· {performances.Count} Р·Р°РїРёСЃРµР№";
             }
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для сохранения записей в файл БД.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ Р·Р°РїРёСЃРµР№ РІ С„Р°Р№Р» Р‘Р”.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (connection == "")
@@ -144,20 +144,20 @@ namespace Theatre
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для сохранения записей в новый файл БД.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ Р·Р°РїРёСЃРµР№ РІ РЅРѕРІС‹Р№ С„Р°Р№Р» Р‘Р”.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveDatabaseAs();
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для добавления новой записи.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ РЅРѕРІРѕР№ Р·Р°РїРёСЃРё.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void AddRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (PerformanceForm performanceForm = new PerformanceForm(performances))
@@ -176,16 +176,16 @@ namespace Theatre
                     performances.Add(newPerformance);
                     ItemAdded.Invoke(newPerformance);
                     dgvMainTable.Refresh();
-                    labelCount.Text = $"Отображено {(bindingSource.DataSource as BindingList<Performance>).Count} из {performances.Count} записей";
+                    labelCount.Text = $"РћС‚РѕР±СЂР°Р¶РµРЅРѕ {(bindingSource.DataSource as BindingList<Performance>).Count} РёР· {performances.Count} Р·Р°РїРёСЃРµР№";
                 }
             }
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для изменения существующей записи.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµР№ Р·Р°РїРёСЃРё.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void ChangeRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (dgvMainTable.SelectedRows.Count == 1)
@@ -207,59 +207,59 @@ namespace Theatre
             }
             else
             {
-                MessageBox.Show("Выделите одну запись для изменения", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Р’С‹РґРµР»РёС‚Рµ РѕРґРЅСѓ Р·Р°РїРёСЃСЊ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ", "РРЅС„РѕСЂРјР°С†РёСЏ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для удаления существующей записи.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ СѓРґР°Р»РµРЅРёСЏ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµР№ Р·Р°РїРёСЃРё.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void RemoveRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (bindingSource.Current == null)
             {
-                MessageBox.Show("Сначала выберите запись", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("РЎРЅР°С‡Р°Р»Р° РІС‹Р±РµСЂРёС‚Рµ Р·Р°РїРёСЃСЊ", "РРЅС„РѕСЂРјР°С†РёСЏ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             Performance performance = bindingSource.Current as Performance;
             ItemRemoved.Invoke(performance);
             performances.Remove(performance);
-            labelCount.Text = $"Отображено {(bindingSource.DataSource as BindingList<Performance>).Count} из {performances.Count} записей";
+            labelCount.Text = $"РћС‚РѕР±СЂР°Р¶РµРЅРѕ {(bindingSource.DataSource as BindingList<Performance>).Count} РёР· {performances.Count} Р·Р°РїРёСЃРµР№";
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для удаления всех записей.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ СѓРґР°Р»РµРЅРёСЏ РІСЃРµС… Р·Р°РїРёСЃРµР№.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void ClearToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (performances.Count == 0)
             {
-                MessageBox.Show("База данных пуста", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Р‘Р°Р·Р° РґР°РЅРЅС‹С… РїСѓСЃС‚Р°", "РРЅС„РѕСЂРјР°С†РёСЏ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             bindingSource.DataSource = performances;
             performances.Clear();
-            labelCount.Text = "Отображено 0 из 0 записей";
+            labelCount.Text = "РћС‚РѕР±СЂР°Р¶РµРЅРѕ 0 РёР· 0 Р·Р°РїРёСЃРµР№";
         }
 
         /// <summary>
-        /// Метод, сохраняющий записи в новый файл БД.
+        /// РњРµС‚РѕРґ, СЃРѕС…СЂР°РЅСЏСЋС‰РёР№ Р·Р°РїРёСЃРё РІ РЅРѕРІС‹Р№ С„Р°Р№Р» Р‘Р”.
         /// </summary>
         private void SaveDatabaseAs()
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
                 Filter = "SQLite Database Files (*.db)|*.db",
-                Title = "Сохранить как",
+                Title = "РЎРѕС…СЂР°РЅРёС‚СЊ РєР°Рє",
             };
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 connection = $"Data Source={saveFileDialog.FileName}";
-                Text = $"ИС «Театр» - {connection.Replace("Data Source=", "")}";
+                Text = $"РРЎ В«РўРµР°С‚СЂВ» - {connection.Replace("Data Source=", "")}";
                 using (DatabaseContext context = new DatabaseContext(connection))
                 {
                     context.Database.EnsureCreated();
@@ -270,15 +270,15 @@ namespace Theatre
         }
 
         /// <summary>
-        /// Метод, обрабатывающий изменение текста для фильтрации записей.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РёР·РјРµРЅРµРЅРёРµ С‚РµРєСЃС‚Р° РґР»СЏ С„РёР»СЊС‚СЂР°С†РёРё Р·Р°РїРёСЃРµР№.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void tbFilterValue_TextChanged(object sender, EventArgs e)
         {
             if (tbFilterValue.Text == "")
             {
-                labelCount.Text = $"Отображено {performances.Count} из {performances.Count} записей";
+                labelCount.Text = $"РћС‚РѕР±СЂР°Р¶РµРЅРѕ {performances.Count} РёР· {performances.Count} Р·Р°РїРёСЃРµР№";
                 bindingSource.DataSource = performances;
                 return;
             }
@@ -311,9 +311,9 @@ namespace Theatre
         }
 
         /// <summary>
-        /// Метод, фильтрующий записи по заданному критерию.
+        /// РњРµС‚РѕРґ, С„РёР»СЊС‚СЂСѓСЋС‰РёР№ Р·Р°РїРёСЃРё РїРѕ Р·Р°РґР°РЅРЅРѕРјСѓ РєСЂРёС‚РµСЂРёСЋ.
         /// </summary>
-        /// <param name="selector">Делегат, возвращающий строковое значение из объекта Performance</param>
+        /// <param name="selector">Р”РµР»РµРіР°С‚, РІРѕР·РІСЂР°С‰Р°СЋС‰РёР№ СЃС‚СЂРѕРєРѕРІРѕРµ Р·РЅР°С‡РµРЅРёРµ РёР· РѕР±СЉРµРєС‚Р° Performance</param>
         private void Filter(Func<Performance, string> selector)
         {
             ItemAdded -= (p => { });
@@ -335,14 +335,14 @@ namespace Theatre
                 }
             });
             bindingSource.DataSource = tmp;
-            labelCount.Text = $"Отображено {tmp.Count} из {performances.Count} записей";
+            labelCount.Text = $"РћС‚РѕР±СЂР°Р¶РµРЅРѕ {tmp.Count} РёР· {performances.Count} Р·Р°РїРёСЃРµР№";
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для сортировки записей.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ СЃРѕСЂС‚РёСЂРѕРІРєРё Р·Р°РїРёСЃРµР№.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void btnSort_Click(object sender, EventArgs e)
         {
             if (performances.Count == 0)
@@ -376,16 +376,16 @@ namespace Theatre
         }
 
         /// <summary>
-        /// Метод, обрабатывающий нажатие кнопки для сохранения таблицы с записями в PDF-файл.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РЅР°Р¶Р°С‚РёРµ РєРЅРѕРїРєРё РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ С‚Р°Р±Р»РёС†С‹ СЃ Р·Р°РїРёСЃСЏРјРё РІ PDF-С„Р°Р№Р».
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void CreatePdfToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
-                Filter = "PDF файлы (*.pdf)|*.pdf",
-                Title = "Сохранить отчет по текущим данным",
+                Filter = "PDF С„Р°Р№Р»С‹ (*.pdf)|*.pdf",
+                Title = "РЎРѕС…СЂР°РЅРёС‚СЊ РѕС‚С‡РµС‚ РїРѕ С‚РµРєСѓС‰РёРј РґР°РЅРЅС‹Рј",
             };
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -429,10 +429,10 @@ namespace Theatre
         }
 
         /// <summary>
-        /// Метод, обрабатывающий изменение текста для поиска записей.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ РёР·РјРµРЅРµРЅРёРµ С‚РµРєСЃС‚Р° РґР»СЏ РїРѕРёСЃРєР° Р·Р°РїРёСЃРµР№.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void tbSearch_TextChanged(object sender, EventArgs e)
         {
             foreach (DataGridViewRow i in dgvMainTable.Rows)
@@ -470,10 +470,10 @@ namespace Theatre
         }
 
         /// <summary>
-        /// Метод, сортирующий записи по алфавиту/возрастанию (убыванию) (в зависимости от критерия).
+        /// РњРµС‚РѕРґ, СЃРѕСЂС‚РёСЂСѓСЋС‰РёР№ Р·Р°РїРёСЃРё РїРѕ Р°Р»С„Р°РІРёС‚Сѓ/РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ (СѓР±С‹РІР°РЅРёСЋ) (РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РєСЂРёС‚РµСЂРёСЏ).
         /// </summary>
-        /// <typeparam name="T">Тип значения, по которому производится сортировка.</typeparam>
-        /// <param name="selector">Делегат, определяющий поле объекта, по которому производится сортировка.</param>
+        /// <typeparam name="T">РўРёРї Р·РЅР°С‡РµРЅРёСЏ, РїРѕ РєРѕС‚РѕСЂРѕРјСѓ РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ СЃРѕСЂС‚РёСЂРѕРІРєР°.</typeparam>
+        /// <param name="selector">Р”РµР»РµРіР°С‚, РѕРїСЂРµРґРµР»СЏСЋС‰РёР№ РїРѕР»Рµ РѕР±СЉРµРєС‚Р°, РїРѕ РєРѕС‚РѕСЂРѕРјСѓ РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ СЃРѕСЂС‚РёСЂРѕРІРєР°.</param>
         private void SortList<T>(Func<Performance, T> selector)
         {
             ItemAdded -= (p => { });
@@ -489,9 +489,9 @@ namespace Theatre
         }
 
         /// <summary>
-        /// Метод, выполняющий поиск записей по критерию.
+        /// РњРµС‚РѕРґ, РІС‹РїРѕР»РЅСЏСЋС‰РёР№ РїРѕРёСЃРє Р·Р°РїРёСЃРµР№ РїРѕ РєСЂРёС‚РµСЂРёСЋ.
         /// </summary>
-        /// <param name="selector">Делегат, возвращающий значение, по которому производится поиск.</param>
+        /// <param name="selector">Р”РµР»РµРіР°С‚, РІРѕР·РІСЂР°С‰Р°СЋС‰РёР№ Р·РЅР°С‡РµРЅРёРµ, РїРѕ РєРѕС‚РѕСЂРѕРјСѓ РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ РїРѕРёСЃРє.</param>
         private void Search(Func<Performance, string> selector)
         {
             foreach(DataGridViewRow i in dgvMainTable.Rows)
@@ -505,10 +505,10 @@ namespace Theatre
         }
 
         /// <summary>
-        /// Метод, обрабатывающий сброс выбора строки в таблице по клику на любое место формы, кроме самой таблицы.
+        /// РњРµС‚РѕРґ, РѕР±СЂР°Р±Р°С‚С‹РІР°СЋС‰РёР№ СЃР±СЂРѕСЃ РІС‹Р±РѕСЂР° СЃС‚СЂРѕРєРё РІ С‚Р°Р±Р»РёС†Рµ РїРѕ РєР»РёРєСѓ РЅР° Р»СЋР±РѕРµ РјРµСЃС‚Рѕ С„РѕСЂРјС‹, РєСЂРѕРјРµ СЃР°РјРѕР№ С‚Р°Р±Р»РёС†С‹.
         /// </summary>
-        /// <param name="sender">Источник события</param>
-        /// <param name="e">Аргументы события нажатия</param>
+        /// <param name="sender">РСЃС‚РѕС‡РЅРёРє СЃРѕР±С‹С‚РёСЏ</param>
+        /// <param name="e">РђСЂРіСѓРјРµРЅС‚С‹ СЃРѕР±С‹С‚РёСЏ РЅР°Р¶Р°С‚РёСЏ</param>
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
             if (!dgvMainTable.Bounds.Contains(PointToClient(Cursor.Position)))
