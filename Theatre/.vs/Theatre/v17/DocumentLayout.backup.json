@@ -80,7 +80,7 @@
               "RelativeDocumentMoniker": "Theatre\\MainForm.cs",
               "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\MainForm.cs",
               "RelativeToolTip": "Theatre\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAowF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T09:18:16.801Z",
               "IsPinned": true,
@@ -115,6 +115,10 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Program.cs",
@@ -124,20 +128,7 @@
               "RelativeToolTip": "Theatre\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T08:59:21.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WelcomeForm.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.cs",
-              "RelativeDocumentMoniker": "Theatre\\WelcomeForm.cs",
-              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.cs [Design]",
-              "RelativeToolTip": "Theatre\\WelcomeForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T11:05:21.2Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-02-20T08:59:21.458Z"
             },
             {
               "$type": "Document",
@@ -149,8 +140,7 @@
               "RelativeToolTip": "Theatre\\DataBase\\DatabaseContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T10:19:10.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T10:19:10.614Z"
             },
             {
               "$type": "Document",
@@ -162,12 +152,7 @@
               "RelativeToolTip": "Theatre\\Models\\Performance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T10:03:00.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2025-02-20T10:03:00.971Z"
             },
             {
               "$type": "Document",
@@ -179,8 +164,7 @@
               "RelativeToolTip": "Theatre\\WelcomeForm.Designer.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAYwGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T16:59:35.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T16:59:35.806Z"
             },
             {
               "$type": "Document",
@@ -203,8 +187,7 @@
               "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.resx",
               "RelativeToolTip": "Theatre\\WelcomeForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-08T16:59:34.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T16:59:34.561Z"
             },
             {
               "$type": "Document",
@@ -240,6 +223,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-02-20T09:00:52.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WelcomeForm.cs [Design]",
+              "DocumentMoniker": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.cs",
+              "RelativeDocumentMoniker": "Theatre\\WelcomeForm.cs",
+              "ToolTip": "D:\\OOP\\oop\\CourseProject\\Theatre\\Theatre\\WelcomeForm.cs [Design]",
+              "RelativeToolTip": "Theatre\\WelcomeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T11:05:21.2Z"
             },
             {
               "$type": "Document",
