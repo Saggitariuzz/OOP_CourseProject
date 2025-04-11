@@ -3,7 +3,7 @@ namespace Theatre
     internal static class Program
     {
         /// <summary>
-        /// Точка входа в приложение.
+        /// РўРѕС‡РєР° РІС…РѕРґР° РІ РїСЂРёР»РѕР¶РµРЅРёРµ.
         /// </summary>
         [STAThread]
         static void Main()
