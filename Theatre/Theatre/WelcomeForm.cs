@@ -1,4 +1,4 @@
-﻿namespace Theatre
+namespace Theatre
 {
     /// <summary>
     /// Класс, представляющий форму с информацией об авторе приложения.
