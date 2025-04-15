@@ -218,7 +218,7 @@ namespace Theatre
         /// <param name="e">Аргументы события нажатия</param>
         private void RemoveRecordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (bindingSource.Current == null)
+            if (dgvMainTable.SelectedRows.Count != 1)
             {
                 MessageBox.Show("Сначала выберите запись", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -389,9 +389,14 @@ namespace Theatre
             };
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
+
                 Table table = new Table(dgvMainTable.Columns.Count - 1);
 
                 PdfFont font = PdfFontFactory.CreateFont(@"C:\Windows\Fonts\arial.ttf", PdfEncodings.IDENTITY_H);
+                Paragraph header = new Paragraph("Список представлений")
+                    .SetFont(font)
+                    .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
+                    .SetFontSize(16);
                 foreach (DataGridViewColumn i in dgvMainTable.Columns)
                 {
                     if (i.Visible && i.Index != 0)
@@ -422,6 +427,7 @@ namespace Theatre
                 using (PdfDocument pdf = new PdfDocument(pdfWriter))
                 {
                     Document document = new Document(pdf);
+                    document.Add(header);
                     document.Add(table);
                     document.Close();
                 }
